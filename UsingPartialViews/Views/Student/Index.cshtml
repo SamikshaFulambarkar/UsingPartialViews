@@ -1,0 +1,10 @@
+﻿@model IEnumerable<UsingPartialViews.Models.Student>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Student List</h1>
+@Html.Partial("_StudentList",Model)
+
+@{
+    Html.RenderPartial("_StudentList", Model);
+}
